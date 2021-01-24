@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Belbin</title>
+</head>
+<body>
+
+    <div class="maincontainer">
+
+        <div class="card">
+
+            <!-- 1th Question -->
+            <section class="vraag1">
+                <div class="question">
+                    <h2 class="underline">Vraag 1: </h2>
+                    <h2>Wanneer ik in een team zit, zou het volgende voor mij kunnen gelden:</h2>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Stelling</th>
+                        <th>Punten</th>
+                    </tr>
+
+                    <tr>
+                        <td>Ik lever de inhoudelijke kennis die bij anderen ontbreekt</td>
+                        <td><input type="number" id="V1A" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik merk nieuwe kansen snel op en maak daar goed gebruik van</td>
+                        <td><input type="number" id="V1B" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik kan met allerlei verschillende mensen goed samenwerken</td>
+                        <td><input type="number" id="V1C" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Eén van mijn natuurlijke gaven is het produceren van ideeën</td>
+                        <td><input type="number" id="V1D" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Als ik iets in mensen zie wat van nut kan zijn voor de doelstellingen van de groep,
+                            weet ik dat er altijd uit te halen</td>
+                        <td><input type="number" id="V1E" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Omdat ik zelf efficiënt ben, houd ik ervan dingen helemaal af te maken</td>
+                        <td><input type="number" id="V1F" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik vind het niet erg als mensen me een tijdlang niet aardig vinden, als ik maar goede
+                            resultaten behaal</td>
+                        <td><input type="number" id="V1G" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik voel snel aan wat werkt in een situatie die ik goed ken</td>
+                        <td><input type="number" id="V1H" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik kan objectief redeneren en een bepaalde zaak onbevooroordeeld van
+                            verschillende kanten belichten</td>
+                        <td><input type="number" id="V1I" min="0" max="10" value="0"></td>
+                    </tr>
+
+
+                </table>
+
+                <button id="counter1" class="verder verder1">Nog 10 punten</button>
+                <div id="error1"></div>
+            </section>
+
+            <!-- 2th Question -->
+            <section class="vraag2">
+                <div class="question">
+                    <h2 class=>Vraag 2: </h2>
+                    <h2>Als ik minder goed presteer in een team zou dat kunnen komen, omdat:</h2>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Stelling</th>
+                        <th>Punten</th>
+                    </tr>
+
+                    <tr>
+                        <td>Ik mij pas op mijn gemak voel wanneer vergaderingen een duidelijke structuur
+                            hebben, in de hand worden gehouden en in het algemeen goed verlopen</td>
+                        <td><input type="number" id="V2A" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik soms te snel toegeef aan anderen die naar mijn mening een goed gezichtspunt
+                            hebben, zonder dat dat voldoende is doorgesproken</td>
+                        <td><input type="number" id="V2B" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik geen idee heb wat er tussen andere mensen speel of waar zij mee bezig zijn</td>
+                        <td><input type="number" id="V2C" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik de neiging heb veel te praten wanneer er nieuwe ideeën in de groep worden
+                            besproken</td>
+                        <td><input type="number" id="V2D" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik het door mijn objectieve kijk op de dingen moeilijk vind om meteen enthousiast met
+                            mijn collega's mee te praten</td>
+                        <td><input type="number" id="V2E" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mensen me soms overheersend en autoritair vinden wanneer we iets klaar moeten
+                            krijgen</td>
+                        <td><input type="number" id="V2F" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik het moeilijk vind om het voortouw te nemen, misschien omdat ik te gevoelig ben
+                            voor de sfeer in de groep</td>
+                        <td><input type="number" id="V2G" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik de neiging heb om helemaal op te gaan in ideeën die ik krijg, zodat ik niet meer in
+                            de gaten heb wat er gaande is</td>
+                        <td><input type="number" id="V2H" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mijn collega's vinden dat ik me te druk maak over details, en te veel denk aan wat er
+                            mis kan gaan</td>
+                        <td><input type="number" id="V2I" min="0" max="10" value="0"></td>
+                    </tr>
+
+
+                </table>
+
+                <button id="counter2" class="verder verder2">Nog 10 punten</button>
+                <div id="error2"></div>
+            </section>
+
+            <!-- 3th Question -->
+            <section class="vraag3">
+                <div class="question">
+                    <h2 class=>Vraag 3: </h2>
+                    <h2>Wanneer ik met anderen samen aan een project werk:</h2>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Stelling</th>
+                        <th>Punten</th>
+                    </tr>
+
+                    <tr>
+                        <td>Ben ik er goed in mensen te beïnvloeden zonder hen onder druk te zetten</td>
+                        <td><input type="number" id="V3A" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Worden door mijn algemene waakzaamheid fouten uit onzorgvuldigheid of
+                            nalatigheid voorkomen</td>
+                        <td><input type="number" id="V3B" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Sta ik klaar om tot actie aan te sporen, om te zorgen dat in vergaderingen geen tijd
+                            verspild wordt en het hoofddoel niet uit het oog wordt verloren</td>
+                        <td><input type="number" id="V3C" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Zal ik altijd met een origineel idee aankomen</td>
+                        <td><input type="number" id="V3D" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Hoeft men zich geen zorgen te maken over mijn bijdrage; ik kan mijn eigen werk
+                            goed organiseren en het is ook inhoudelijk in orde</td>
+                        <td><input type="number" id="V3E" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ben ik altijd bereid een goed voorstel te steunen wanneer dat in het
+                            gemeenschappelijk belang is</td>
+                        <td><input type="number" id="V3F" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ben ik steeds op zoek naar de nieuwste ideeën en de laatste ontwikkelingen</td>
+                        <td><input type="number" id="V3G" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Wordt mijn vermogen om objectief te beoordelen vast door anderen op prijs gesteld</td>
+                        <td><input type="number" id="V3H" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Kan men het gerust aan mij overlaten om te zorgen dat al het noodzakelijke
+                            georganiseerd wordt</td>
+                        <td><input type="number" id="V3I" min="0" max="10" value="0"></td>
+                    </tr>
+
+
+
+                </table>
+
+                <button id="counter3" class="verder verder3">Nog 10 punten</button>
+                <div id="error3"></div>
+            </section>
+
+            <!-- 4th Question -->
+            <section class="vraag4">
+                <div class="question">
+                    <h2 class=>Vraag 4: </h2>
+                    <h2>Kenmerkend voor mijn houding tegenover groepswerk, is dat:</h2>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Stelling</th>
+                        <th>Punten</th>
+                    </tr>
+
+                    <tr>
+                        <td>Ik het eigenlijk graag doe omdat ik mijn collega's beter wil leren kennen</td>
+                        <td><input type="number" id="V4A" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik niet aarzel om de denkbeelden van anderen aan te vallen of om zelf een
+                            minderheidsstandpunt in te nemen</td>
+                        <td><input type="number" id="V4B" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik gewoonlijk niet verlegen zit om argumenten waarmee ik een redenatie die niet
+                            klopt, kan weerleggen</td>
+                        <td><input type="number" id="V4C" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik denk dat ik er goed in ben te zorgen dat een plan ook slaagt, wanneer eenmaal
+                            besloten is dat het moet worden uitgevoerd</td>
+                        <td><input type="number" id="V4D" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik de neiging heb om voor de hand liggende opmerkingen te vermijden en met
+                            onverwachte ideeën aan te komen</td>
+                        <td><input type="number" id="V4E" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik liever alleen werk, anderen leiden alleen maar af van de inhoud</td>
+                        <td><input type="number" id="V4F" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mijn perfectionisme iets toevoegt aan iedere taak in het team waaronder ik mijn
+                            schouders zet</td>
+                        <td><input type="number" id="V4G" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik graag gebruik maak van contact met mensen buiten de groep</td>
+                        <td><input type="number" id="V4H" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Hoewel ik graag ieders mening wil horen, ik besluitvaardig ben wanneer dat nodig is</td>
+                        <td><input type="number" id="V4I" min="0" max="10" value="0"></td>
+                    </tr>
+
+
+                </table>
+
+                <button id="counter4" class="verder verder4">Nog 10 punten</button>
+                <div id="error4"></div>
+            </section>
+
+            <!-- 5th Question -->
+            <section class="vraag5">
+                <div class="question">
+                    <h2 class="underline">Vraag 5: </h2>
+                    <h2>Ik houd van werken, omdat:</h2>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Stelling</th>
+                        <th>Punten</th>
+                    </tr>
+
+                    <tr>
+                        <td>Ik er plezier in heb situaties te analyseren en de verschillende keuzemogelijkheden
+                            tegen elkaar af te wegen</td>
+                        <td><input type="number" id="V5A" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik het interessant vind praktische oplossingen voor problemen te bedenken</td>
+                        <td><input type="number" id="V5B" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik voel dat ik aan goede werkverhoudingen bijdraag</td>
+                        <td><input type="number" id="V5C" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik veel invloed kan uitoefenen op de besluitvorming</td>
+                        <td><input type="number" id="V5D" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik mensen kan ontmoeten die misschien iets nieuws te bieden hebben</td>
+                        <td><input type="number" id="V5E" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik mensen kan overtuigen van de noodzaak dat iets moet gebeuren</td>
+                        <td><input type="number" id="V5F" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik me in mijn element voel wanneer ik me volledig op één taak kan concentreren</td>
+                        <td><input type="number" id="V5G" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik graag een werkterrein vind dat mijn fantasie prikkelt</td>
+                        <td><input type="number" id="V5H" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ik het leuk vind om inhoudelijke problemen op te lossen</td>
+                        <td><input type="number" id="V5I" min="0" max="10" value="0"></td>
+                    </tr>
+
+
+                </table>
+
+                <button id="counter5" class="verder verder5">Nog 10 punten</button>
+                <div id="error5"></div>
+            </section>
+
+            <!-- 6th Question -->
+            <section class="vraag6">
+                <div class="question">
+                    <h2 class=>Vraag 6: </h2>
+                    <h2>Wanneer ik plotseling in weinig tijd met onbekende mensen een moeilijke taak moet
+                        uitvoeren: </h2>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Stelling</th>
+                        <th>Punten</th>
+                    </tr>
+
+                    <tr>
+                        <td>Trek ik mij het liefst ergens in een hoekje terug, zodat ik rustig kan bedenken hoe ik
+                            het moet aanpakken</td>
+                        <td><input type="number" id="V6A" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Zou ik bereid zijn samen te werken met de persoon die van de meest positieve
+                            aanpak blijk geeft, zelfs als dit een lastig iemand lijkt</td>
+                        <td><input type="number" id="V6B" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Zou ik een manier vinden om de taak minder omvangrijk te maken door te kijken wie
+                            wat het beste kan doen</td>
+                        <td><input type="number" id="V6C" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ga ik alleen aan de slag om mijn deel van de taak aan te pakken</td>
+                        <td><input type="number" id="V6D" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Zou mijn aangeboren urgentiebesef ervoor zorgen dat we niet achter raken op het
+                            schema</td>
+                        <td><input type="number" id="V6E" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Denk ik dat ik mijn hoofd koel en mijn hersenen bij elkaar zou weten te houden</td>
+                        <td><input type="number" id="V6F" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Zou ik recht op mijn doel afgaan en mij niet laten opjagen</td>
+                        <td><input type="number" id="V6G" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Zou ik bereid zijn het voortouw te nemen wanneer ik het gevoel heb dat de groep
+                            geen vooruitgang boekt</td>
+                        <td><input type="number" id="V6H" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Zou ik een discussie op gang brengen met de bedoeling nieuwe gedachten te
+                            stimuleren en dingen in beweging te zetten</td>
+                        <td><input type="number" id="V6I" min="0" max="10" value="0"></td>
+                    </tr>
+
+
+                </table>
+
+                <button id="counter6" class="verder verder6">Nog 10 punten</button>
+                <div id="error6"></div>
+            </section>
+
+            <!-- 7th Question -->
+            <section class="vraag7">
+                <div class="question">
+                    <h2 class=>Vraag 7: </h2>
+                    <h2>Als ik problemen heb met groepswerk, zou het waarschijnlijk gaan om:</h2>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Stelling</th>
+                        <th>Punten</th>
+                    </tr>
+
+                    <tr>
+                        <td>Mijn neiging ongeduldig te reageren op mensen die de voortgang belemmeren</td>
+                        <td><input type="number" id="V7A" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Dat ik mijn verhaal kwijt wil en ik het moeilijk vind om in te schatten of de anderen op
+                            mijn kennis zitten te wachten</td>
+                        <td><input type="number" id="V7B" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Kritiek van anderen dat ik te analytisch ben en onvoldoende intuïtief</td>
+                        <td><input type="number" id="V7C" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mijn nauwgezetheid waardoor ik soms de boel ophoud</td>
+                        <td><input type="number" id="V7D" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Het feit dat ik al snel verveeld raak en één of twee stimulerende groepsleden nodig
+                            heb om me enthousiast te maken</td>
+                        <td><input type="number" id="V7E" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>De moeite die ik heb om op gang te komen tenzij ik precies weet wat het doel is</td>
+                        <td><input type="number" id="V7F" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Het onvermogen dat ik soms heb om ingewikkelde kwesties die ik bedenk ook
+                            duidelijk uit te leggen</td>
+                        <td><input type="number" id="V7G" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mijn gebrek aan durf om van anderen dingen te vragen die ik zelf niet kan</td>
+                        <td><input type="number" id="V7H" min="0" max="10" value="0"></td>
+                    </tr>
+
+                    <tr>
+                        <td>De aarzeling om mijn standpunt te verdedigen wanneer ik op duidelijke weerstand
+                            stuit</td>
+                        <td><input type="number" id="V7I" min="0" max="10" value="0"></td>
+                    </tr>
+
+                </table>
+
+                <button id="counter7" class="verder verder7">Uitslag</button>
+                <div id="error7"></div>
+            </section>
+
+            <!-- Uitslag -->
+            <section class="uitslag">
+                <div class="vz">
+                    <h3>Voorzitter: </h3>
+                    <div class="vz_result">
+                        <h4 id="vz_val">0%</h4>
+                    </div>
+                </div>
+
+                <div class="vm">
+                    <h3>Vormer: </h3>
+                    <h4 id="vm_val">0%</h4>
+                </div>
+
+                <div class="pl">
+                    <h3>Plant: </h3>
+                    <h4 id="pl_val">0%</h4>
+                </div>
+
+                <div class="mo">
+                    <h3>Monitor: </h3>
+                    <h4 id="mo_val">0%</h4>
+                </div>
+
+                <div class="bm">
+                    <h3>Bedrijfsman: </h3>
+                    <h4 id="bm_val">0%</h4>
+                </div>
+
+                <div class="bo">
+                    <h3>Brononderzoek: </h3>
+                    <h4 id="bo_val">0%</h4>
+                </div>
+
+                <div class="gw">
+                    <h3>Groepswerker: </h3>
+                    <h4 id="gw_val">0%</h4>
+                </div>
+
+                <div class="zd">
+                    <h3>Zorgdrager: </h3>
+                    <h4 id="zd_val">0%</h4>
+                </div>
+
+                <div class="sp">
+                    <h3>Specialist: </h3>
+                    <h4 id="sp_val">0%</h4>
+                </div>
+            </section>
+
+        
+        
+    </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./style.js"></script>
+    <script src="./app.js"></script>
+    
+</body>
+</html>
