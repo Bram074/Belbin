@@ -47,6 +47,10 @@ section {
     transition: background 500ms;
 }
 
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
 
 
 
