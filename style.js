@@ -29,14 +29,5 @@ function printResults() {
     $('.vraag6').slideDown();
     $('.vraag7').slideDown();
     window.print();
-    $('.maincontainer').css({'height':'100vh'});
-    $('.start').slideUp();
-    $('.vraag1').slideUp();
-    $('.vraag2').slideUp();
-    $('.vraag3').slideUp();
-    $('.vraag4').slideUp();
-    $('.vraag5').slideUp();
-    $('.vraag6').slideUp();
-    $('.vraag7').slideUp();
 }
 
