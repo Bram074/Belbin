@@ -13,6 +13,23 @@
 
         <div class="card">
 
+            <!-- Home -->
+            <section class="start">
+                <h2>Welkom bij de online Belbin test van Scouting Academy Twenteland</h2>
+                <p>Teams bestaan uit verschillende mensen, ieder met zijn of haar eigen manier van werken. De Britse
+                    onderzoeker Belbin onderscheidde negen verschillende teamrollen. Met deze test kun je erachter
+                    komen met welke teamrol jij het meeste affiniteit hebt.</p>
+                <h3>Hoe werkt het?</h3>
+                <p>De vragenlijst bestaat uit zeven vragen. Deze vragen bevatten telkens negen uitspraken. Bij
+                    iedere vraag verdeel je tien punten over de negen uitspraken. Als je je volledig herkent in één
+                    uitspraak, dan kun je alle tien de punten daaraan geven. Als je je in meerdere antwoorden
+                    herkent, dan verdeel je de tien punten naar voorkeur. Probeer het aantal antwoorden waaraan
+                    je punten geeft zo klein mogelijk te houden.</p>
+                <p>Op basis van de puntenverdeling en de beschrijving van rolpatronen binnen een team wordt
+                    vervolgens vastgesteld met welke teamrollen je de meeste affiniteit hebt</p>
+                    <button class="verder start_btn">Start</button>
+            </section>
+
             <!-- 1th Question -->
             <section class="vraag1">
                 <div class="question">
@@ -503,52 +520,74 @@
 
             <!-- Uitslag -->
             <section class="uitslag">
-                <div class="vz">
-                    <h3>Voorzitter: </h3>
-                    <div class="vz_result">
+                <h2>Uitslag:</h2>
+                <p>Klik voor meer info</p>
+
+
+                <a href="https://belbin.nl/teamrolmodel/teamrollen/voorzitter">
+                    <div class="solutionCard vz">
+                        <h3>Voorzitter: </h3>
                         <h4 id="vz_val">0%</h4>
+                    </div> 
+                </a>
+
+                <a href="https://belbin.nl/teamrolmodel/teamrollen/vormer">
+                    <div class="solutionCard vm">
+                        <h3>Vormer: </h3>
+                        <h4 id="vm_val">0%</h4>
                     </div>
-                </div>
+                </a>
+        
+                <a href="https://belbin.nl/teamrolmodel/teamrollen/plant">
+                    <div class="solutionCard pl">
+                        <h3>Plant: </h3>
+                        <h4 id="pl_val">0%</h4>
+                    </div>
+                </a>
 
-                <div class="vm">
-                    <h3>Vormer: </h3>
-                    <h4 id="vm_val">0%</h4>
-                </div>
+                <a href="https://belbin.nl/teamrolmodel/teamrollen/monitor">
+                    <div class="solutionCard mo">
+                        <h3>Monitor: </h3>
+                        <h4 id="mo_val">0%</h4>
+                    </div>
+                </a>
 
-                <div class="pl">
-                    <h3>Plant: </h3>
-                    <h4 id="pl_val">0%</h4>
-                </div>
+                <a href="https://belbin.nl/teamrolmodel/teamrollen/bedrijfsman">
+                    <div class="solutionCard bm">
+                        <h3>Bedrijfsman: </h3>
+                        <h4 id="bm_val">0%</h4>
+                    </div>
+                </a>
 
-                <div class="mo">
-                    <h3>Monitor: </h3>
-                    <h4 id="mo_val">0%</h4>
-                </div>
+                <a href="https://belbin.nl/teamrolmodel/teamrollen/brononderzoeker">
+                    <div class="solutionCard bo">
+                        <h3>Brononderzoek: </h3>
+                        <h4 id="bo_val">0%</h4>
+                    </div>
+                </a>
 
-                <div class="bm">
-                    <h3>Bedrijfsman: </h3>
-                    <h4 id="bm_val">0%</h4>
-                </div>
+                <a href="https://belbin.nl/teamrolmodel/teamrollen/groepswerker">
+                    <div class="solutionCard gw">
+                        <h3>Groepswerker: </h3>
+                        <h4 id="gw_val">0%</h4>
+                    </div>
+                </a>
 
-                <div class="bo">
-                    <h3>Brononderzoek: </h3>
-                    <h4 id="bo_val">0%</h4>
-                </div>
+                <a href="https://belbin.nl/teamrolmodel/teamrollen/zorgdrager">
+                    <div class="solutionCard zd">
+                        <h3>Zorgdrager: </h3>
+                        <h4 id="zd_val">0%</h4>
+                    </div>
+                </a>
 
-                <div class="gw">
-                    <h3>Groepswerker: </h3>
-                    <h4 id="gw_val">0%</h4>
-                </div>
+                <a href="https://belbin.nl/teamrolmodel/teamrollen/specialist">
+                    <div class="solutionCard sp">
+                        <h3>Specialist: </h3>
+                        <h4 id="sp_val">0%</h4>
+                    </div>
+                </a>
 
-                <div class="zd">
-                    <h3>Zorgdrager: </h3>
-                    <h4 id="zd_val">0%</h4>
-                </div>
-
-                <div class="sp">
-                    <h3>Specialist: </h3>
-                    <h4 id="sp_val">0%</h4>
-                </div>
+                <button class="verder print_btn" onclick="printResults()">Print resultaat</button>
             </section>
 
         

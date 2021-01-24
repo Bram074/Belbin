@@ -212,45 +212,50 @@ $(document).ready(function(){
         };
     };
 
+    $('.start_btn').click(function(){
+        $('.start').slideUp("fast");
+        $('.vraag1').delay(400).slideDown("fast");
+        
+    });
+
     $('.verder1').click(function(){
         $('.vraag1').slideUp("fast");
-        $('.vraag2').slideDown("fast");
+        $('.vraag2').delay(400).slideDown("fast");
         clearInterval(V1);
-        $('body').scrollTop();
         
     });
 
     $('.verder2').click(function(){
         $('.vraag2').slideUp("fast");
-        $('.vraag3').slideDown("fast");
+        $('.vraag3').delay(400).slideDown("fast");
         clearInterval(V2);
     
     });
 
     $('.verder3').click(function(){
         $('.vraag3').slideUp("fast");
-        $('.vraag4').slideDown("fast");
+        $('.vraag4').delay(400).slideDown("fast");
         clearInterval(V3);
     
     });
 
     $('.verder4').click(function(){
         $('.vraag4').slideUp("fast");
-        $('.vraag5').slideDown("fast");
+        $('.vraag5').delay(400).slideDown("fast");
         clearInterval(V4);
     
     });
 
     $('.verder5').click(function(){
         $('.vraag5').slideUp("fast");
-        $('.vraag6').slideDown("fast");
+        $('.vraag6').delay(400).slideDown("fast");
         clearInterval(V5);
     
     });
 
     $('.verder6').click(function(){
         $('.vraag6').slideUp("fast");
-        $('.vraag7').slideDown("fast");
+        $('.vraag7').delay(400).slideDown("fast");
         clearInterval(V6);
     
     });
@@ -372,11 +377,13 @@ $(document).ready(function(){
         $('#sp_val').html(Math.round(SP*10)/10 + '%');
 
         $('.vraag7').slideUp("slow");
-        $('.uitslag').fadeIn(3000);
+        $('.uitslag').delay(400).slideDown(3000);
 
         
     
     });
+
+    
 
 
 

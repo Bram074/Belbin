@@ -13,7 +13,15 @@ body {
     background: #cb356b; /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #cb356b, #bd3f32); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #cb356b, #bd3f32);
+}
 
+h1, h2, h3, h4, p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .maincontainer {
@@ -29,13 +37,31 @@ section {
 }
 
 
+.start {
+    width: 80vw;
+}
+
+.start_btn, .print_btn {
+    color: white;
+    background: #362F4B;
+    transition: background 500ms;
+}
+
+
+
+
+.start_btn:hover, .print_btn:hover{
+    background: tomato;
+}
+
+
 #counter1, #counter2, #counter3, #counter4, #counter5, #counter6, #counter7{
     border-radius: 5px;
     background-color: rgba(128, 128, 128, 0.3);
 }
 
 
-.vraag2, .vraag3, .vraag4, .vraag5, .vraag6, .vraag7, .uitslag {
+.vraag1, .vraag2, .vraag3, .vraag4, .vraag5, .vraag6, .vraag7, .uitslag{
     display: none;
 }
 
@@ -105,26 +131,72 @@ tr:nth-child(even){
 
 .verder:focus {
     outline: none;
-
 }
 
-
-.uitslag div {
-    margin-bottom: 10px;
+.uitslag .verder{
+    width: 200px;
 }
 
-.vz_result {
+.row {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.solutionCard {
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px 0 0 0;
+    border: 1px solid white;
+    transition: background 500ms;
+}
+
+.solutionCard h2, .solutionCard h3, .solutionCard h4, .solutionCard p {
+    margin: 0;
+}
+
+.vz:hover {
+    background: rgba(132, 170, 211, 1); 
+}
+
+.vm:hover {
+    background: rgba(182, 66, 43, 1);
+}
+
+.pl:hover {
+    background: rgba(232, 215, 102, 1);
+}
+
+
+.mo:hover {
+    background: rgba(161, 153, 176, 1);
+}
+
+.bm:hover {
+    background-color: rgba(13, 102, 157, 1);
+}
+
+.bo:hover {
+    background: rgba(171, 66, 122, 1);
+}
+
+.gw:hover {
+    background: rgba(117, 187, 111, 1);
+}
+
+.zd:hover {
+    background: rgba(127, 73, 53, 1);
+}
+
+.sp:hover {
+    background: rgba(185, 179, 150, 1);
 }
 
 #vz_val {
     margin-right: 10px;
-}
-
-#vz_bar {
-    background-color: royalblue;
-    width: 200px;
-    height: 1.5rem;
 }
 
 
@@ -132,4 +204,42 @@ tr:nth-child(even){
     .maincontainer {
         height: auto;
     }
+}
+
+@media print {
+    .card, .start, .vraag1, .vraag2, .vraag3, .vraag4, .vraag5, .vraag6, .vraag7, .uitslag {
+        display: block;
+        
+    }
+
+    body {
+        display: block;
+        align-items: center;
+        justify-content: center; 
+        font-family: 'Poppins', sans-serif;
+        color: black;
+        background:  none;
+    }
+
+    button {
+        display: none;
+    }
+
+    section {
+        page-break-after: always;
+    }
+
+    .maincontainer {
+        display: block;
+    }
+
+    .solutionCard {
+        width: 200px;
+        text-align: center;
+        border-radius: 10px;
+        margin: 10px 0 0 0;
+        border: 1px solid black;
+        color: black
+    }
+
 }
