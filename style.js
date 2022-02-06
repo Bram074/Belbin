@@ -20,6 +20,7 @@ function notZero(button_id) {
 
 function printResults() {
     $('.maincontainer').css({'height':'auto'});
+    $('.black').css({'color': 'black'});
     $('.start').slideDown();
     $('.vraag1').slideDown();
     $('.vraag2').slideDown();
@@ -28,6 +29,10 @@ function printResults() {
     $('.vraag5').slideDown();
     $('.vraag6').slideDown();
     $('.vraag7').slideDown();
-    window.print();
+    
+    setTimeout(function(){
+        window.print();
+    }, 500)
+    
 }
 

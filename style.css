@@ -216,6 +216,10 @@ tr:nth-child(even){
         
     }
 
+    .start > h1, h2, h3, p  {
+        color: black
+    }
+
     body {
         display: block;
         align-items: center;
